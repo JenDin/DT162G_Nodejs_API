@@ -9,7 +9,7 @@ const getDishes = async (req, res) => {
     if (dishes.length < 1) {
       return res.json({ message: `There are currently no dishes available` });
     }
-    res.status(200).send(dishes);
+    res.status(200).json({ dishes: dishes });
   } catch (error) {
     res.status(204).json({ message: error });
   }
@@ -67,8 +67,8 @@ const updateDish = async (req, res) => {
   };
 
   try {
-    const updatedDish = await Dish.updateOne(filter, updateDocument);
-    res.status(200).send(updatedDish);
+    const updateDish = await Dish.updateOne(filter, updateDocument);
+    res.status(200).send(updateDish);
   } catch (error) {
     res
       .status(404)
