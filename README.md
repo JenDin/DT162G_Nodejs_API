@@ -25,11 +25,11 @@ Drinkar:
 ```
 | Metod         | Ändpunkt               | 		Beskrivning		       |
 | ------------- |------------------------| --------------------------------------------|
-| GET           | URL      | Hämta alla befintliga maträtter i databasen |
-| GET           | URL  | Hämta en specifik maträtt i databasen       |
-| POST 		| URL      | Lagra en ny maträtt		               |
-| PUT 		| URL  | Uppdatera en maträtt med angivet ID         |
-| DELETE 	| URL  | Radera en maträtt med angivet ID            |
+| GET           | URL      | Hämta alla befintliga drinkar i databasen |
+| GET           | URL  | Hämta en specifik drink i databasen       |
+| POST 		| URL      | Lagra en ny drink		               |
+| PUT 		| URL  | Uppdatera en drink med angivet ID         |
+| DELETE 	| URL  | Radera en drink med angivet ID            |
 ```
 
 Bordsbokningar:
