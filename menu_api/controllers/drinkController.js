@@ -27,7 +27,7 @@ const createDrink = async (req, res) => {
 
   try {
     const createDrink = await drinkBody.save();
-    res.status(201).send(createDrink);
+    res.status(201).json(createDrink);
   } catch (error) {
     res
       .status(400)
@@ -42,7 +42,7 @@ const getDrinkById = async (req, res) => {
 
   try {
     const getDrink = await Drink.findById(id);
-    res.status(200).send(getDrink);
+    res.status(200).json(getDrink);
   } catch (error) {
     res
       .status(404)
@@ -67,7 +67,7 @@ const updateDrink = async (req, res) => {
 
   try {
     const updateDrink = await Drink.updateOne(filter, updateDocument);
-    res.status(200).send(updateDrink);
+    res.status(200).json(updateDrink);
   } catch (error) {
     res
       .status(404)

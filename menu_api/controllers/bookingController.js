@@ -31,7 +31,7 @@ const createBooking = async (req, res) => {
 
   try {
     const createBooking = await bookingBody.save();
-    res.status(201).send(createBooking);
+    res.status(201).json(createBooking);
   } catch (error) {
     res.status(400).json({
       message: "Could not create the booking",
@@ -48,7 +48,7 @@ const getBookingById = async (req, res) => {
 
   try {
     const getBooking = await Booking.findById(id);
-    res.status(200).send(getBooking);
+    res.status(200).json(getBooking);
   } catch (error) {
     res
       .status(404)
@@ -73,7 +73,7 @@ const updateBooking = async (req, res) => {
 
   try {
     const updateBooking = await Booking.updateOne(filter, updateDocument);
-    res.status(200).send(updateBooking);
+    res.status(200).json(updateBooking);
   } catch (error) {
     res
       .status(404)

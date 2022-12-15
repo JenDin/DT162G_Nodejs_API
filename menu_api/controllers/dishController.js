@@ -27,7 +27,7 @@ const createDish = async (req, res) => {
 
   try {
     const createDish = await dishBody.save();
-    res.status(201).send(createDish);
+    res.status(201).json(createDish);
   } catch (error) {
     res.status(400).json({
       message: "Could not create the dish",
@@ -43,7 +43,7 @@ const getDishById = async (req, res) => {
 
   try {
     const getdish = await Dish.findById(id);
-    res.status(200).send(getdish);
+    res.status(200).json(getdish);
   } catch (error) {
     res
       .status(404)
@@ -68,7 +68,7 @@ const updateDish = async (req, res) => {
 
   try {
     const updateDish = await Dish.updateOne(filter, updateDocument);
-    res.status(200).send(updateDish);
+    res.status(200).json(updateDish);
   } catch (error) {
     res
       .status(404)
