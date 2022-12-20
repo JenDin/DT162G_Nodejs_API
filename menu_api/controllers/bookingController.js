@@ -11,7 +11,7 @@ const getBookings = async (req, res) => {
         message: `There are currently no bookings in the system`,
       });
     }
-    res.status(200).json({ bookings: bookings });
+    res.status(200).json(bookings);
   } catch (error) {
     res.status(204).json({ message: error });
   }

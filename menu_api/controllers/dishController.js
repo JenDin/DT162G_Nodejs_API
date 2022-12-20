@@ -9,7 +9,7 @@ const getDishes = async (req, res) => {
     if (dishes.length < 1) {
       return res.json({ message: `There are currently no dishes available` });
     }
-    res.status(200).json({ dishes: dishes });
+    res.status(200).json(dishes);
   } catch (error) {
     res.status(204).json({ message: error });
   }

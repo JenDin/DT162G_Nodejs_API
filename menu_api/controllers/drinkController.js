@@ -9,7 +9,7 @@ const getDrinks = async (req, res) => {
     if (drinks.length < 1) {
       return res.json({ message: "There are currently no drinks available" });
     }
-    res.status(200).json({ drinks: drinks });
+    res.status(200).json(drinks);
   } catch (error) {
     res.status(204).json({ message: error });
   }
