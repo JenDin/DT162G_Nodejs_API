@@ -1,7 +1,7 @@
 # DT162G 
 
 ## REST-webbtjänst
-Detta repository innehåller kod för en REST-webbtjänst utvecklad i Node.js och Express. Denna REST-webbtjänst har skapats för att hantera information för restaurangen Nightbird. API'et har stöd för CRUD (Create, Read, Update, Delete) och det finns tre ändpunkter som beskrivs med detaljrikt nedanför.
+Detta repository innehåller kod för en REST-webbtjänst utvecklad i Node.js och Express. Denna REST-webbtjänst har skapats för att hantera information för sushirestaurangen Ikumi. API'et har stöd för CRUD (Create, Read, Update, Delete) och det finns tre ändpunkter som beskrivs med detaljrikt nedanför.
 
 ## Länkar
 
