@@ -16,7 +16,7 @@ const bookingSchema = new Schema(
       required: true,
     },
     guestAmount: {
-      type: String,
+      type: Number,
       required: true,
     },
     date: {
