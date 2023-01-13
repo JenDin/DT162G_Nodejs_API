@@ -1,49 +1,46 @@
-# DT162G 
+# Node.js/Express API 
 
-## REST-webbtjänst
-Detta repository innehåller kod för en REST-webbtjänst utvecklad i Node.js och Express. Denna REST-webbtjänst har skapats för att hantera information för sushirestaurangen Ikumi. API'et har stöd för CRUD (Create, Read, Update, Delete) och det finns tre ändpunkter som beskrivs med detaljrikt nedanför.
+## REST API
+This repository contains code for a REST web service developed in Node.js and Express. This REST web service has been created to manage information for the fictional sushi restaurant Ikumi. The API supports CRUD (Create, Read, Update, Delete) and there are three endpoints which are described with detail below.
 
-## Länkar
-
-
-## Användning av REST-webbtjänsten
+## Use of the REST API
 
 ```
 
-Maträtter:
+Dishes:
 ```
-| Metod         | Ändpunkt             | 	        Beskrivning		       |
+| Method         | Endpoint             | 	        Description		       |
 | ------------- |----------------------| --------------------------------------------- |
-| GET           | URL     | Hämta alla befintliga maträtter i databasen   |
-| GET           | URL | Hämta en specifik maträtt i databasen	       |
-| POST 		| URL    | Lagra en ny maträtt		               |
-| PUT 		| URL| Uppdatera en maträtt med angivet ID           |
-| DELETE 	| URL | Radera en maträtt med angivet ID              |
+| GET           | /api/dishes     | Get all dishes in the database   |
+| GET           | /api/dishes/id | Get a specific dish in the database	       |
+| POST 		| /api/dishes    | Create a new dish	               |
+| PUT 		| /api/dishes/id| Update a dish            |
+| DELETE 	| /api/dishes/id| Delete a dish              |
 ```
 
-Drinkar:
+Drinks:
 ```
-| Metod         | Ändpunkt               | 		Beskrivning		       |
+| Method         | Endpoint               | 		Description		       |
 | ------------- |------------------------| --------------------------------------------|
-| GET           | URL      | Hämta alla befintliga drinkar i databasen |
-| GET           | URL  | Hämta en specifik drink i databasen       |
-| POST 		| URL      | Lagra en ny drink		               |
-| PUT 		| URL  | Uppdatera en drink med angivet ID         |
-| DELETE 	| URL  | Radera en drink med angivet ID            |
+| GET           | /api/drinks      | Get all drinks in the database |
+| GET           | /api/drinks/id  | Get a specific drink in the database      |
+| POST 		| /api/drinks      | Createa a new drink		               |
+| PUT 		| /api/drinks/id   | Update a drink                     |
+| DELETE 	| /api/drinks/id   | Delete a drink             |
 ```
 
-Bordsbokningar:
+Table reservations:
 ```
-| Metod         | Ändpunkt               | 	       Beskrivning		       |
+| Method         | Endpoint               | 	       Description		       |
 | ------------- |------------------------| --------------------------------------------|
-| GET           | URL        | Hämta alla befintliga bokningar i databasen |
-| GET           | URL    | Hämta en specifik bokning i databasen.      |
-| POST 		| URL        | Lagra en ny bokning			       |
-| PUT 		| URL    | Uppdatera en bokning med angivet ID	       |
-| DELETE 	| URL    | Radera en bokning med angivet ID	       |
+| GET           | /api/bookings        | Hämta alla befintliga bokningar i databasen |
+| GET           | /api/bookings/id    | Hämta en specifik bokning i databasen.      |
+| POST 		| /api/bookings        | Lagra en ny bokning			       |
+| PUT 		| /api/bookings/id    | Uppdatera en bokning med angivet ID	       |
+| DELETE 	| /api/bookings/id     | Delete a booking  	       |
 ```
 
 API:et tar emot och returnerar JSON-data med följande struktur: 
 
 
-{ "id": "1", "title": "Strawberry parfait", "category": "Dessert", "description": "fraise des bois, vanilla, crumble", "price": "10" }
+{ "_id": "639ce43685260da1950bdd6b", "title": "Ebi", "category": "Sashimi/Nigiri", "description": "Shrimp", "price": "1640" }
