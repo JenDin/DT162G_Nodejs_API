@@ -40,7 +40,7 @@ Table reservations:
 | DELETE 	| /api/bookings/id     | Delete a booking  	       |
 ```
 
-API:et tar emot och returnerar JSON-data med följande struktur: 
+The API receives and returns JSON data with the following structure: 
 
 
 { "_id": "639ce43685260da1950bdd6b", "title": "Ebi", "category": "Sashimi/Nigiri", "description": "Shrimp", "price": "1640" }
