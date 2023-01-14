@@ -8,7 +8,10 @@ const {
   deleteDrink,
 } = require("../controllers/drinkController");
 
+// GET all - POST routes
 router.route("/").get(getDrinks).post(createDrink);
+
+// GET by ID - PUT - DELETE routes
 router.route("/:id").get(getDrinkById).put(updateDrink).delete(deleteDrink);
 
 module.exports = router;

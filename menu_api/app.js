@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 const colors = require("colors");
 const connectDB = require("./config/db");
 
+// Import the routes
 const indexRouter = require("./routes/index");
 const drinksRouter = require("./routes/drinks");
 const dishesRouter = require("./routes/dishes");
@@ -51,6 +52,7 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
+// Create a server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}...`);

@@ -42,7 +42,6 @@ const createBooking = async (req, res) => {
 
 // @ desc Get booking by id
 // @route GET /api/bookings/:id
-
 const getBookingById = async (req, res) => {
   const id = req.params.id;
 
@@ -83,7 +82,6 @@ const updateBooking = async (req, res) => {
 
 // @ desc Delete booking
 // @route DELETE /api/bookings/:id
-
 const deleteBooking = async (req, res) => {
   const id = req.params.id;
 
